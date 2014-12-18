@@ -1,0 +1,70 @@
+{
+    "criteria": {
+        "blackboxtests": [
+            {
+                "checkName": "Case1",
+                "checkType": "BlackBoxTest",
+                "group": "blackboxtests",
+                "penalty": "",
+                "rule": {
+                    "input": "100\nRAM\n15000\n200\nTOM\n9000\n300\nBOB\n11000\n400\nSAM\n5000",
+                    "output": "100 RAM 15000.000000 300 BOB 11000.000000",
+                    "type": "STDIN"
+                },
+                "score": "5",
+                "visible": "all",
+                "result": {
+                    "PASS": false,
+                    "violations": [
+                        "expected:<...300 BOB 11000.000000[]> but was:<...300 BOB 11000.000000[ ]>"
+                    ]
+                }
+            }
+        ],
+        "system": [
+            {
+                "checkName": "Compilation",
+                "checkType": "compile",
+                "group": "system",
+                "penalty": "",
+                "rule": {
+                    "deprecation_ignore": "",
+                    "warnings_ignore": ""
+                },
+                "score": "0",
+                "visible": "eval",
+                "result": {
+                    "PASS": true,
+                    "violations": [
+
+                    ]
+                }
+            }
+        ]
+    },
+    "weightage": {
+        "blackboxtests": "undefined",
+        "system": "100"
+    },
+    "lastSaved": "20141216 155004",
+    "resultSummary": {
+        "blackboxtests": {
+            "totalchecks": 1,
+            "pass": 0,
+            "fail": 1,
+            "error": 0,
+            "skipped": 0,
+            "groupScore": 0
+        },
+        "system": {
+            "totalchecks": 1,
+            "pass": 1,
+            "fail": 0,
+            "error": 0,
+            "skipped": 0,
+            "groupScore": 0
+        },
+        "overallScore": 0
+    },
+    "resultLastSaved": "20141216 155030"
+}
